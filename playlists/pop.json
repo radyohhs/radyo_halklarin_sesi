@@ -1,0 +1,70 @@
+{
+  "name": "Pop",
+  "description": "Pop müzik radyosu",
+  "songs": [
+    {
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "album": "After Hours",
+      "file": "blinding-lights.mp3",
+      "duration": 200,
+      "cover": ""
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "album": "÷ (Divide)",
+      "file": "shape-of-you.mp3",
+      "duration": 233,
+      "cover": ""
+    },
+    {
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "album": "Future Nostalgia",
+      "file": "levitating.mp3",
+      "duration": 203,
+      "cover": ""
+    },
+    {
+      "title": "Stay",
+      "artist": "The Kid LAROI, Justin Bieber",
+      "album": "F*CK LOVE 3: OVER YOU",
+      "file": "stay.mp3",
+      "duration": 141,
+      "cover": ""
+    },
+    {
+      "title": "Watermelon Sugar",
+      "artist": "Harry Styles",
+      "album": "Fine Line",
+      "file": "watermelon-sugar.mp3",
+      "duration": 174,
+      "cover": ""
+    },
+    {
+      "title": "Peaches",
+      "artist": "Justin Bieber ft. Daniel Caesar",
+      "album": "Justice",
+      "file": "peaches.mp3",
+      "duration": 198,
+      "cover": ""
+    },
+    {
+      "title": "good 4 u",
+      "artist": "Olivia Rodrigo",
+      "album": "SOUR",
+      "file": "good-4-u.mp3",
+      "duration": 178,
+      "cover": ""
+    },
+    {
+      "title": "Don't Start Now",
+      "artist": "Dua Lipa",
+      "album": "Future Nostalgia",
+      "file": "dont-start-now.mp3",
+      "duration": 183,
+      "cover": ""
+    }
+  ]
+}
