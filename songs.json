@@ -1,0 +1,74 @@
+[
+  {
+    "time": "09:00",
+    "program": "Sabahın Sesi",
+    "title": "Yolumuz Uzun",
+    "artist": "Grup Yorum",
+    "url": "https://pub-76583eb163614260bcc74e5cedd2639c.r2.dev/grup%20yorum/grup_yorum_yolumuz_uzun.mp3",
+    "cover": "assets/images/covers/sabah.svg",
+    "live": true
+  },
+  {
+    "time": "11:00",
+    "program": "Gün Ortası",
+    "title": "Düşenlere",
+    "artist": "Bandista",
+    "url": "",
+    "cover": "assets/images/covers/gun-ortasi.svg",
+    "live": false
+  },
+  {
+    "time": "13:00",
+    "program": "Öğle Bülteni",
+    "title": "Merhaba",
+    "artist": "Kardeş Türküler",
+    "url": "",
+    "cover": "assets/images/covers/ogle.svg",
+    "live": false
+  },
+  {
+    "time": "14:00",
+    "program": "Müzik Saati",
+    "title": "Cemo",
+    "artist": "Grup Munzur",
+    "url": "",
+    "cover": "assets/images/covers/muzik.svg",
+    "live": false
+  },
+  {
+    "time": "16:00",
+    "program": "Dünyadan Notlar",
+    "title": "Güneş Topla Benim İçin",
+    "artist": "Zülfü Livaneli",
+    "url": "",
+    "cover": "assets/images/covers/dunya.svg",
+    "live": false
+  },
+  {
+    "time": "18:00",
+    "program": "Akşam Rüzgârı",
+    "title": "Leylim Ley",
+    "artist": "Yeni Türkü",
+    "url": "",
+    "cover": "assets/images/covers/aksam.svg",
+    "live": false
+  },
+  {
+    "time": "20:00",
+    "program": "Özgür Mikrofon",
+    "title": "Mapushane Çeşmesi",
+    "artist": "Ahmet Kaya",
+    "url": "",
+    "cover": "assets/images/covers/mikrofon.svg",
+    "live": false
+  },
+  {
+    "time": "22:00",
+    "program": "Geceye Dair",
+    "title": "Gece",
+    "artist": "Ezginin Günlüğü",
+    "url": "",
+    "cover": "assets/images/covers/gece.svg",
+    "live": false
+  }
+]
