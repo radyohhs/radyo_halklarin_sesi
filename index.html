@@ -1,36 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Halkların Sesi Radyosu - Emeğin, dayanışmanın ve özgürlüğün sesi.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Halkların Sesi Radyosu</title>
+  <meta name="description" content="Halkların Sesi Radyosu">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="noise"></div>
+  <div class="app">
 
-  <div class="site-shell">
-    <header class="site-header">
-      <a class="brand" href="#" aria-label="Halkların Sesi Radyosu">
-        <div class="brand-mark">
-          <span class="signal signal-a"></span>
-          <span class="signal signal-b"></span>
-          <span class="signal signal-c"></span>
-          <span class="signal-core"></span>
+    <header class="header">
+      <div class="identity">
+        <div class="logo" aria-hidden="true">
+          <span class="logo-star">★</span>
+          <span class="logo-wave">)))</span>
         </div>
-
-        <div class="brand-copy">
+        <div>
           <h1>HALKLARIN <span>SESİ</span> RADYOSU</h1>
-          <p>Emeğin, dayanışmanın ve özgürlüğün sesi</p>
+          <p>Emeğin, özgürlüğün, eşitliğin sesi!</p>
         </div>
-      </a>
+      </div>
 
-      <div class="listener-card">
-        <span class="live-dot"></span>
+      <div class="listener-box">
+        <div class="listener-symbol">◉</div>
         <div>
           <small>CANLI DİNLEYİCİ SAYISI</small>
           <strong id="listenerCount">1.248</strong>
@@ -38,161 +34,139 @@
       </div>
     </header>
 
-    <main class="main-layout">
+    <main class="content">
       <aside class="panel schedule-panel">
-        <div class="panel-heading">
-          <div>
-            <span class="eyebrow">BUGÜN</span>
-            <h2>Yayın Akışı</h2>
-          </div>
-          <span class="panel-icon">◫</span>
+        <div class="panel-title">
+          <span class="title-icon">▦</span>
+          <h2>YAYIN AKIŞI</h2>
         </div>
-
         <div id="scheduleList" class="schedule-list"></div>
-
-        <div class="manifesto-card">
-          <span class="manifesto-star">★</span>
-          <p>Biz halklarız. Geleceği kendi ellerimizle kuracağız.</p>
+        <div class="slogan-box">
+          <div class="raised-fist">✊</div>
+          <strong>BİZ HALKLARIZ,<br>GELECEĞİ KENDİ<br>ELLERİMİZLE KURACAĞIZ!</strong>
         </div>
       </aside>
 
-      <section class="panel player-panel">
-        <div class="player-stage">
-          <div class="cover-area">
-            <div class="vinyl-disc" aria-hidden="true">
-              <span class="vinyl-center"></span>
-            </div>
-
-            <div class="cover-frame">
-              <img id="programCover" src="assets/images/covers/sabah.svg" alt="Program kapağı">
-              <div class="cover-overlay">
-                <span id="coverProgram">Sabahın Sesi</span>
-              </div>
-            </div>
+      <section class="panel main-player">
+        <div class="art-zone">
+          <div class="record" aria-hidden="true">
+            <span></span>
           </div>
-
-          <div class="track-content">
-            <span class="now-playing-badge">
-              <span class="live-dot"></span>
-              ŞU AN ÇALAN
-            </span>
-
-            <h2 id="songTitle">Yolumuz Uzun</h2>
-            <p id="artistName">Grup Yorum</p>
-
-            <div class="progress-wrap">
-              <div class="progress-track">
-                <span id="progressBar"></span>
-              </div>
-              <div class="time-row">
-                <span id="elapsedTime">01:35</span>
-                <span id="totalTime">04:25</span>
-              </div>
-            </div>
-
-            <div class="player-controls">
-              <button class="control-button" id="prevButton" aria-label="Önceki şarkı">⏮</button>
-              <button class="control-button play-button" id="playButton" aria-label="Oynat">▶</button>
-              <button class="control-button" id="nextButton" aria-label="Sonraki şarkı">⏭</button>
-            </div>
-
-            <div class="volume-row">
-              <span>🔊</span>
-              <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.8">
-            </div>
-
-            <p class="live-label">CANLI YAYIN</p>
+          <div class="cover">
+            <img id="programCover" src="assets/images/covers/sabah.svg" alt="Program kapağı">
           </div>
         </div>
 
-        <div class="program-cards" id="programCards"></div>
+        <div class="track-info">
+          <div class="now-label">▮ ŞU AN ÇALAN</div>
+          <h2 id="songTitle">YOLUMUZ UZUN</h2>
+          <p id="artistName">Grup Yorum</p>
+        </div>
 
+        <div class="seek">
+          <div class="seek-track"><span id="progressBar"></span></div>
+          <div class="seek-times">
+            <span id="elapsedTime">00:00</span>
+            <span id="totalTime">00:00</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="muteButton" aria-label="Sesi kapat">🔊</button>
+          <button id="prevButton" aria-label="Önceki">◀</button>
+          <button id="playButton" class="play" aria-label="Oynat">▶</button>
+          <button id="nextButton" aria-label="Sonraki">▶</button>
+          <button id="volumeButton" aria-label="Ses">🔊</button>
+        </div>
+
+        <div class="live-stream">((●)) CANLI YAYIN</div>
         <audio id="audioPlayer" preload="metadata"></audio>
       </section>
 
       <aside class="panel chat-panel">
-        <div class="panel-heading">
-          <div>
-            <span class="eyebrow">TOPLULUK</span>
-            <h2>Canlı Sohbet</h2>
-          </div>
-          <span class="panel-icon">▣</span>
+        <div class="panel-title">
+          <span class="title-icon">▣</span>
+          <h2>CANLI SOHBET</h2>
         </div>
 
-        <div class="chat-info">
-          Sohbet alanı şu anda demo modundadır.
-        </div>
-
-        <div id="messages" class="message-list">
+        <div class="messages" id="messages">
           <article class="message">
-            <span class="avatar avatar-red">M</span>
+            <span class="avatar red">M</span>
             <div>
-              <div class="message-meta">
-                <strong>Murat</strong>
-                <time>19:24</time>
-              </div>
-              <p>Herkese selamlar. Yayın çok güzel gidiyor.</p>
+              <div class="message-head"><strong>Murat</strong><time>19:24</time></div>
+              <p>Herkese selamlar! Harika bir yayın oluyor bugün.</p>
             </div>
           </article>
-
           <article class="message">
-            <span class="avatar avatar-gold">E</span>
+            <span class="avatar orange">E</span>
             <div>
-              <div class="message-meta">
-                <strong>Ece</strong>
-                <time>19:25</time>
-              </div>
-              <p>Bu şarkıyı çok seviyorum. Selam olsun herkese.</p>
+              <div class="message-head"><strong>Ece</strong><time>19:25</time></div>
+              <p>Bu şarkıyı çok seviyorum! ❤️</p>
             </div>
           </article>
-
           <article class="message">
-            <span class="avatar avatar-green">A</span>
+            <span class="avatar green">A</span>
             <div>
-              <div class="message-meta">
-                <strong>Ali</strong>
-                <time>19:26</time>
-              </div>
-              <p>Dayanışmayla, umutla dinliyoruz.</p>
+              <div class="message-head"><strong>Ali</strong><time>19:25</time></div>
+              <p>Selamlar radyom, iyi ki varsınız!</p>
             </div>
           </article>
-
           <article class="message">
-            <span class="avatar avatar-purple">Z</span>
+            <span class="avatar purple">Z</span>
             <div>
-              <div class="message-meta">
-                <strong>Zilan</strong>
-                <time>19:27</time>
-              </div>
-              <p>Grup Yorum şarkılarıyla devam edelim.</p>
+              <div class="message-head"><strong>Zilan</strong><time>19:26</time></div>
+              <p>Grup Yorum şarkılarıyla güne devam ✊</p>
+            </div>
+          </article>
+          <article class="message">
+            <span class="avatar blue">D</span>
+            <div>
+              <div class="message-head"><strong>Deniz</strong><time>19:26</time></div>
+              <p>Yayın akışı çok güzel olmuş, elinize sağlık.</p>
+            </div>
+          </article>
+          <article class="message">
+            <span class="avatar orange">M</span>
+            <div>
+              <div class="message-head"><strong>Mehmet</strong><time>19:27</time></div>
+              <p>Selam olsun tüm dinleyicilere, nerede olursanız olun!</p>
             </div>
           </article>
         </div>
 
         <form id="chatForm" class="chat-form">
-          <input id="chatInput" type="text" maxlength="180" placeholder="Mesajınızı yazın..." autocomplete="off">
-          <button type="submit" aria-label="Mesaj gönder">➤</button>
+          <input id="chatInput" maxlength="180" placeholder="Mesajınızı yazın...">
+          <button type="submit" aria-label="Gönder">➤</button>
         </form>
       </aside>
     </main>
 
-    <footer class="bottom-player">
-      <div class="station-summary">
-        <div class="station-mini-mark">◉</div>
+    <footer class="footer-player">
+      <div class="station">
+        <div class="mini-logo">★</div>
         <div>
-          <strong>Halkların Sesi Radyosu</strong>
-          <span id="footerTrack">Yolumuz Uzun — Grup Yorum</span>
+          <strong>HALKLARIN SESİ RADYOSU</strong>
+          <span id="footerTrack">Yolumuz Uzun - Grup Yorum</span>
         </div>
       </div>
 
-      <blockquote>“Başka bir dünya mümkün; o dünyanın sesi burada.”</blockquote>
+      <blockquote>
+        “Dünyayı değiştirmek istiyoruz, başka yolu yok!”
+        <span>— Grup Yorum</span>
+      </blockquote>
 
-      <div class="equalizer" aria-hidden="true">
-        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <div class="footer-right">
+        <div class="equalizer" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="volume-line">
+          <span>🔊</span>
+          <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.8">
+        </div>
       </div>
     </footer>
-  </div>
 
+  </div>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -70,5 +70,23 @@
     "url": "",
     "cover": "assets/images/covers/gece.svg",
     "live": false
+  },
+  {
+    "time": "00:00",
+    "program": "Gece Karışımı",
+    "title": "Gece Karışımı",
+    "artist": "Halkların Sesi",
+    "url": "",
+    "cover": "assets/images/covers/gece-karisimi.svg",
+    "live": false
+  },
+  {
+    "time": "02:00",
+    "program": "Nostalji",
+    "title": "Nostalji Seçkisi",
+    "artist": "Halkların Sesi",
+    "url": "",
+    "cover": "assets/images/covers/nostalji.svg",
+    "live": false
   }
 ]
